@@ -1,0 +1,24 @@
+﻿@using WolfEmails.Extensions;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WolfEmails</title>    
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/queryes.css" asp-append-version="true" />
+    <link rel="shortcut icon" href="./img/Wolf.ico" type="image/x-icon">
+</head>
+<body>
+
+    @Html.RenderMessageBox()
+
+    <div class="container">        
+        @RenderBody()        
+    </div>
+
+    <script src="~/js/messageBox.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@media (max-width: 380px){
+    .formContainer{
+        width: 290px;
+
+        h1{
+            font-size: 50px;
+        }
+
+        input[type="text"], textarea{
+            width: 280px !important;
+
+            &:focus{
+                transform: scale(1) !important;
+            }
+        }
+    }
+
+    .messageBox{
+        width: 290px;
+    }
+}

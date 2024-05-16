@@ -1,0 +1,27 @@
+﻿@model WolfEmails.Models.MessageViewModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="formContainer">
+    <h1 class="">Napiš Vlkovi</h1>
+    <form asp-action="sendEmail" method="post">        
+        
+        <input asp-for="Message.Subject" placeholder="Jméno a příjmení" required/>
+        
+        <textarea asp-for="Message.Content" placeholder="Text vaší zprávy" required></textarea>
+        
+        <span class="smallLabel">Odpověz slovy.</span>
+        <span class="dangerLabel">@Model.ControlQuestionLabel</span>      
+        
+        <input asp-for="ControlQuestion" placeholder="@Model.ControlQuestionPlaceholder" required/>        
+
+        <input asp-for="Message.To" type="hidden" />
+        <input asp-for="QuestionIndex" type="hidden" />
+        <input asp-for="ControlQuestionPlaceholder" type="hidden" />
+
+        <input type="submit" />
+        
+    </form>
+</div>
