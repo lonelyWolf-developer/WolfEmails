@@ -5,7 +5,12 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfEmails", "WolfEmails\WolfEmails.csproj", "{5EBA1763-DE01-455B-8E8E-24070111C525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices", "EmailServices\EmailServices.csproj", "{DDE1A87C-90E7-4981-8771-D7799B6836CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailServices", "EmailServices\EmailServices.csproj", "{DDE1A87C-90E7-4981-8771-D7799B6836CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3658815F-51E3-4EA3-BFC6-31D4033A1B50}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
